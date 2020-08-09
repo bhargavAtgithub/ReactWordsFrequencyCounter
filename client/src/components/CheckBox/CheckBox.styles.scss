@@ -1,0 +1,11 @@
+input[type="checkbox"]:checked {
+  color: green($color: #000000);
+}
+
+.checkbox {
+  margin: 5px 5px 5px 0px;
+}
+
+.checkbox-label {
+  margin: 5px 0px 5px 5px;
+}

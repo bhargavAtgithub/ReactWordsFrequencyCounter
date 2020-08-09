@@ -1,0 +1,40 @@
+.form-input {
+  margin: 10px 0px 20px 0px;
+  .inputValue {
+    border: 10px solid rgb(253, 37, 138);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  & :focus {
+    outline: none;
+  }
+}
+
+.loadingSpinner {
+  pointer-events: none;
+  width: 80px;
+  height: 80px;
+  border: 0.4em solid transparent;
+  border-color: #eee;
+  border-top-color: #f1f500;
+  border-radius: 50%;
+  animation: loadingspin 1s linear infinite;
+}
+
+@keyframes loadingspin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
