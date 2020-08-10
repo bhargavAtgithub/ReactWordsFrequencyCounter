@@ -13,20 +13,11 @@ const WordDetailsList = () => {
         <WordDetails word="Complete data" />
         <WordDetails position="1" word="hello" frequency="30" />
         <WordDetails position="2" word="world" frequency="20" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
-        <WordDetails position="3" word="Wassup?" frequency="10" />
+        <WordDetails position="3" word="sample" frequency="10" />
+        <WordDetails position="3" word="data" frequency="10" />
+        <WordDetails position="3" word="think" frequency="10" />
+        <WordDetails position="3" word="words" frequency="10" />
+        <WordDetails position="3" word="sample" frequency="10" />
       </Col>
     </div>
   );

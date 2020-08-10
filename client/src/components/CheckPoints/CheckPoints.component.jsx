@@ -7,9 +7,9 @@ import CheckBox from "../CheckBox/CheckBox.component";
 const CheckPoints = () => {
   return (
     <div className="check-points">
-      <CheckBox checkBoxName="initiated" checked={false} />
-      <CheckBox checkBoxName="Connected to ttt file" checked={false} />
-      <CheckBox checkBoxName="received file from ttt" checked={false} />
+      <CheckBox checkBoxName="initiated" checked={true} />
+      <CheckBox checkBoxName="Connected to ttt file" checked={true} />
+      <CheckBox checkBoxName="received file from ttt" checked={true} />
       <CheckBox checkBoxName="processing" checked={false} />
       <CheckBox checkBoxName="Done!" checked={false} />
     </div>

@@ -1,4 +1,4 @@
 export const setData = (data) => ({
-  type: SET_DATA,
+  type: "SET_DATA",
   payload: data,
 });

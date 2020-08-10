@@ -10,11 +10,18 @@ import CustomButton from "../CustomButton/CustomButton.component";
 import Title from "../Title/Title.component";
 import CheckPoints from "../CheckPoints/CheckPoints.component";
 
+import { setData } from "../../redux/action.types";
+import { connect } from "react-redux";
+
 const DataFormInput = () => {
   useEffect(async () => {
-    var sortedWordsData = await fetch(`http://localhost:3001/ttt/data`)
-      .then((data) => console.log(data.text()))
-      .catch((err) => console.log("There was some problem", err));
+    var sortedWordsData = new Promise((resolve, reject) => {
+      resolve(fetch(`http://localhost:3001/ttt/data`));
+    });
+
+    sortedWordsData.then((data) =>
+      data.text().then((text) => console.log(text))
+    );
   });
 
   return (
@@ -31,4 +38,9 @@ const DataFormInput = () => {
   );
 };
 
+// const mapDispatchToProps = (dispatch) => ({
+//   setData: (data) => dispatch(setData(data)),
+// });
+
+// export default connect(null, mapDispatchToProps)(DataFormInput);
 export default DataFormInput;
